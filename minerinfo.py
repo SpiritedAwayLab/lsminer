@@ -295,13 +295,13 @@ def getMinerStatus_url(apicfg):
 			status = None
 			if apimode == 1:
 				status = getMinerStatus_trex(msdict)
-			elif apimode == 10:
+			elif apimode == 10 or apimode == 35:
 				status = getMinerStatus_nbminer(msdict)
-			elif apimode == 8:
+			elif apimode == 8 or apimode == 33:
 				status = getMinerStatus_gminer(msdict)
 			elif apimode == 9:
 				status = getMinerStatus_ewbfminer(msdict)
-			elif apimode == 7:
+			elif apimode == 7 or apimode == 34:
 				status = getMinerStatus_bminer(msdict)
 			elif apimode == 29:
 				status = getMinerStatus_kbminer(msdict)
